@@ -23,13 +23,11 @@ public class TestBean implements Serializable {
      * Default constructor. 
      */
     public TestBean() {
-    	System.out.println("Creating Bean...");
     	name="Eirik";
     	count=0;
     }
     
     public String getName() {
-    	System.out.println("In getName()");
     	count = count + 1;
     	name = name + " "+ Integer.toString(count);
     	return name;
